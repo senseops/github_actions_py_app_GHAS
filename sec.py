@@ -4,7 +4,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 # Secure: Use environment variable for the API key
-# API_KEY = os.getenv('API_KEY')  # Fetch from environment variable
+API_KEY = os.getenv('API_KEY')  # Fetch from environment variable
 
 @app.route('/secret', methods=['GET'])
 def get_secret():
