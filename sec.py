@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 # Secure: Use environment variable for the API key
 # API_KEY = os.getenv('API_KEY')  # Fetch from environment variable
-API_KEY = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"  # Example API key
 
 @app.route('/secret', methods=['GET'])
 def get_secret():
